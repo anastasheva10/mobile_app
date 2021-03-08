@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Page1MAL.qml</file>
+        <file>Page2MAL.qml</file>
+        <file>Page11.qml</file>
+    </qresource>
+</RCC>
