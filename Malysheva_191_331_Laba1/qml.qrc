@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Page1MAL.qml</file>
+        <file>Page2MAL.qml</file>
+        <file>Page3MAL.qml</file>
+        <file>sample.mp4</file>
+        <file>video.jpg</file>
+        <file>volna.jpg</file>
+        <file>pogoda.png</file>
+        <file>fon.jpg</file>
+    </qresource>
+</RCC>
