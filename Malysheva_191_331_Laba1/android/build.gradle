@@ -1,77 +1,102 @@
 buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
+   repositories {
+       google()
+       jcenter()
+   }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0'
-    }
+   dependencies {
+       classpath 'com.android.tools.build:gradle:3.6.0'
+       classpath 'com.google.gms:google-services:4.3.8'
+   }
 }
 
 repositories {
-    google()
-    jcenter()
+   google()
+   jcenter()
 }
 
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+   implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+   implementation platform('com.google.firebase:firebase-bom:28.1.0')
+   implementation 'com.google.firebase:firebase-analytics'
+   /*implementation 'com.google.android.gms:17.6.0'*/
+}
+
+allprojects {
+ repositories {
+   // Check that you have the following line (if not, add it):
+   google()  // Google's Maven repository
+ }
 }
 
 android {
-    /*******************************************************
-     * The following variables:
-     * - androidBuildToolsVersion,
-     * - androidCompileSdkVersion
-     * - qt5AndroidDir - holds the path to qt android files
-     *                   needed to build any Qt application
-     *                   on Android.
-     *
-     * are defined in gradle.properties file. This file is
-     * updated by QtCreator and androiddeployqt tools.
-     * Changing them manually might break the compilation!
-     *******************************************************/
+   /*******************************************************
+    * The following variables:
+    * - androidBuildToolsVersion,
+    * - androidCompileSdkVersion
+    * - qt5AndroidDir - holds the path to qt android files
+    *                   needed to build any Qt application
+    *                   on Android.
+    *
+    * are defined in gradle.properties file. This file is
+    * updated by QtCreator and androiddeployqt tools.
+    * Changing them manually might break the compilation!
+    *******************************************************/
 
-    compileSdkVersion androidCompileSdkVersion.toInteger()
+   compileSdkVersion androidCompileSdkVersion.toInteger()
 
-    buildToolsVersion '28.0.3'
+   buildToolsVersion '28.0.3'
 
-    sourceSets {
-        main {
-            manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = [qt5AndroidDir + '/src', 'src', 'java']
-            aidl.srcDirs = [qt5AndroidDir + '/src', 'src', 'aidl']
-            res.srcDirs = [qt5AndroidDir + '/res', 'res']
-            resources.srcDirs = ['resources']
-            renderscript.srcDirs = ['src']
-            assets.srcDirs = ['assets']
-            jniLibs.srcDirs = ['libs']
-       }
-    }
+   sourceSets {
+       main {
+           manifest.srcFile 'AndroidManifest.xml'
+           java.srcDirs = [qt5AndroidDir + '/src', 'src', 'java']
+           aidl.srcDirs = [qt5AndroidDir + '/src', 'src', 'aidl']
+           res.srcDirs = [qt5AndroidDir + '/res', 'res']
+           resources.srcDirs = ['resources']
+           renderscript.srcDirs = ['src']
+           assets.srcDirs = ['assets']
+           jniLibs.srcDirs = ['libs']
+      }
+   }
 
-    tasks.withType(JavaCompile) {
-        options.incremental = true
-    }
+   tasks.withType(JavaCompile) {
+       options.incremental = true
+   }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+   compileOptions {
+       sourceCompatibility JavaVersion.VERSION_1_8
+       targetCompatibility JavaVersion.VERSION_1_8
+   }
 
-    lintOptions {
-        abortOnError false
-    }
+   lintOptions {
+       abortOnError false
+   }
 
-    // Do not compress Qt binary resources file
-    aaptOptions {
-        noCompress 'rcc'
-    }
+   // Do not compress Qt binary resources file
+   aaptOptions {
+       noCompress 'rcc'
+   }
 
-    defaultConfig {
-        resConfig "en"
-        minSdkVersion = qtMinSdkVersion
-        targetSdkVersion = qtTargetSdkVersion
-    }
+   defaultConfig {
+       resConfig "en"
+       minSdkVersion = qtMinSdkVersion
+       targetSdkVersion = qtTargetSdkVersion
+   }
+
+   /*externalNativeBuild {
+     cmake {
+       targets 'firebase_analytics'
+       // Args are: Re-use app library prebuilt by app gradle project.
+       //           Don't configure all the cmake subprojects.
+       //           Only include needed project.
+       arguments '-DFIREBASE_CPP_USE_PRIOR_GRADLE_BUILD=ON',
+               '-DFIREBASE_INCLUDE_LIBRARY_DEFAULT=OFF',
+               '-DFIREBASE_INCLUDE_ANALYTICS=ON',
+               "-DFIREBASE_ANDROID_STL=${firebaseAndroidStl}"
+     }
+   }*/
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.2, 2021-04-08T09:59:49. -->
+<!-- Written by QtCreator 4.14.2, 2021-07-16T00:00:53. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -133,7 +133,6 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Отладка</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4BuildConfiguration</value>
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
-    <value type="int" key="RunSystemFunction">0</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\Program Files (x86)\Polytech\Mobile app\build-Malysheva_191_331_Laba1-Desktop_Qt_5_15_2_MSVC2019_64bit-Release</value>
@@ -312,14 +311,14 @@
    <value type="QString" key="DeviceType">Android.Device.Type</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Android Qt 5.15.2 Clang Multi-Abi</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Android Qt 5.15.2 Clang Multi-Abi</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{bdfd2056-8e64-4824-b7bc-0c63a26941fa}</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{891021e0-6062-4a1a-899f-3b4a0279c581}</value>
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\Program Files (x86)\Polytech\Mobile app\build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/Program Files (x86)/Polytech/Mobile app/build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\Program Files (x86)\Polytech\Mobile app\build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi_891021-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/Program Files (x86)/Polytech/Mobile app/build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi_891021-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -327,7 +326,6 @@
       <value type="QString" key="QtProjectManager.QMakeBuildStep.QMakeArguments"></value>
       <value type="bool" key="QtProjectManager.QMakeBuildStep.QMakeForced">false</value>
       <valuelist type="QVariantList" key="QtProjectManager.QMakeBuildStep.SelectedAbis">
-       <value type="QString">armeabi-v7a</value>
        <value type="QString">arm64-v8a</value>
       </valuelist>
      </valuemap>
@@ -374,8 +372,8 @@
     <value type="int" key="RunSystemFunction">0</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\Program Files (x86)\Polytech\Mobile app\build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi-Release</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/Program Files (x86)/Polytech/Mobile app/build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\Program Files (x86)\Polytech\Mobile app\build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi_891021-Release</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/Program Files (x86)/Polytech/Mobile app/build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi_891021-Release</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -429,8 +427,8 @@
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
     <value type="int" key="EnableQmlDebugging">0</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\Program Files (x86)\Polytech\Mobile app\build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi-Profile</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/Program Files (x86)/Polytech/Mobile app/build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">D:\Program Files (x86)\Polytech\Mobile app\build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi_891021-Profile</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">D:/Program Files (x86)/Polytech/Mobile app/build-Malysheva_191_331_Laba1-Android_Qt_5_15_2_Clang_Multi_Abi_891021-Profile</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>

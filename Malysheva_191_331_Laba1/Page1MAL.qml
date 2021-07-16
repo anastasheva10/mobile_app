@@ -297,11 +297,12 @@ Page{
 
                    RotationAnimator {
                        target: item
-                       running: control1.visible && control1.running
+                       //running: control1.visible && control1.running
                        from: 0
                        to: 360
                        loops: Animation.Infinite
                        duration: 1250
+                        running: image.status === Image.Loading
                    }
 
                    Repeater {

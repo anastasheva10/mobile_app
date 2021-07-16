@@ -8,6 +8,17 @@ ApplicationWindow {
     visible: true
     title: qsTr("Tabs")
 
+    signal signalMakeRequest();
+           signal success (string lab);
+           signal failed(string lab);
+            signal cancel (string lab);
+            signal restRequest();
+            signal hashvd(string lab);
+    signal btnHTTPRequest()
+        signal btnHTTPResponse()
+    signal getPhoto();
+
+
     SwipeView {
         id: swipeView
         anchors.fill: parent
@@ -27,6 +38,30 @@ ApplicationWindow {
             id: page3MAL
         }
 
+        Page6MAL {
+            id: page6MAL
+        }
+
+        Page5MAL {
+            id: page5MAL
+        }
+
+        Page7MAL {
+            id: page7MAL
+        }
+
+        Page8MAL {
+            id: page8MAL
+        }
+
+        Page9MAL {
+            id: page9MAL
+        }
+
+
+        Page10MAL {
+            id: page10MAL
+        }
 }
 
 
@@ -45,6 +80,15 @@ ApplicationWindow {
         }
         TabButton {
             text: qsTr("Page 3")
+        }
+        TabButton {
+            text: qsTr("Page 4")
+        }
+        TabButton {
+            text: qsTr("Page 5")
+        }
+        TabButton {
+            text: qsTr("Page 6")
         }
     }
 }

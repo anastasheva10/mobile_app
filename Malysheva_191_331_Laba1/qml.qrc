@@ -10,5 +10,21 @@
         <file>volna.jpg</file>
         <file>pogoda.png</file>
         <file>fon.jpg</file>
+        <file>logotip_vk.jpg</file>
+        <file>Page5MAL.qml</file>
+        <file>Page6MAL.qml</file>
+        <file>avatar.jpg</file>
+        <file>Page7MAL.qml</file>
+        <file>Page8MAL.qml</file>
+        <file>receive.jpg</file>
+        <file>send.jpg</file>
+        <file>Page9MAL.qml</file>
+        <file>Page10MAL.qml</file>
+        <file>leo.jpg</file>
+        <file>ThresholdMask_mask.png</file>
+        <file>mask1.png</file>
+        <file>MaskedBlur_mask.png</file>
+        <file>pause.png</file>
+        <file>play.png</file>
     </qresource>
 </RCC>
